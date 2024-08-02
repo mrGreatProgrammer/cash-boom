@@ -1,0 +1,8 @@
+html
+./static/icons/cashboom/close_x.svg
+<!-- <img class="s_advantage_bcg_vulcane" src="./static/images/cashboom/s_advantage_bcg_vulcane.png" alt="vulcane" title="vulcane" /> -->
+
+css
+background: url('../../images/cashboom/header_bcg.png') center/cover no-repeat;
+
+/* 34% 13% / 18% 40% */

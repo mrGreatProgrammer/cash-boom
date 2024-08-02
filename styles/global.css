@@ -1,0 +1,229 @@
+body{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================================================================= FONT-FAMILY */
+.ff_inter{
+  font-family: "Inter", sans-serif;
+}
+.ff_ubuntu{
+  font-family: "Ubuntu", sans-serif;
+}
+.ff_nunito_sans{
+  font-family: "Nunito Sans", sans-serif;
+}
+/* ================================================================= FONT-SIZE */
+.fs_36{
+  font-size: 36px;
+}
+/* ================================================================= FONT-WEIGHT */
+.fw_4{
+  font-weight: 400;
+}
+.fw_5{
+  font-weight: 500;
+}
+.fw_6{
+  font-weight: 600;
+}
+.fw_7{
+  font-weight: 700;
+}
+.fw_8{
+  font-weight: 800;
+}
+.fw_9{
+  font-weight: 900;
+}
+
+/* ================================================================= BUTTON */
+
+.advertiser-btn,.signup-btn,.see_all-btn{
+  height: 80px;
+  font-size: 24px;
+  border-radius: 16px;
+  color: var(--color-FFFFFF);
+  cursor: pointer;
+}
+.advertiser-btn,.signup-btn{
+  width: 360px;
+  background: #EE883D;
+    z-index: 6;
+}
+
+.advertiser-btn{
+  box-shadow: 0px 0px 30px 0px #DD3B29, 0px 0px 17.9px 0px #FFFFFF42 inset;
+}
+.signup-btn{
+  box-shadow: 0px 0px 17.9px 0px #FFFFFF42 inset;
+}
+.see_all-btn{
+  width: 320px;
+  border: 2px solid var(--color-FFFFFF);
+  box-shadow: 0px 0px 17.9px 0px #FFFFFF42 inset;
+}
+.advertiser-btn,.signup-btn,.see_all-btn{
+  transition: all 0.3s;
+}
+
+.signup-btnm,
+.advertiser-btnm2{
+  box-shadow: 0px 0px 17.9px 0px #FFFFFF42 inset;
+  background: #EE883D;
+  width: 163px;
+  height: 50px;
+  border-radius: 12px;
+  color: var(--color-FFFFFF);
+}
+.signup-btnm{
+  font-size: 16px;
+}
+.advertiser-btnm2{
+  font-size: 12px;
+}
+/* ================================================================= BUTTON HOVER */
+
+.advertiser-btn:hover{
+  background: var(--color-DA5538);
+  box-shadow: 0px 0px 40px 0px #DD3B29, 0px 0px 17.9px 0px #FFFFFF42 inset;
+  transition: all 0.3s;
+}
+.advertiser-btnm2:hover{
+  background: var(--color-DA5538);
+  transition: all 0.3s;
+}
+.signup-btn:hover,.signup-btnm:hover{
+  background: var(--color-DA5538);
+  transition: all 0.3s;
+}
+.see_all-btn:hover{
+  background: var(--color-DA5538);
+  transition: all 0.3s;
+}
+
+/* ================================================================= BUTTON ACTIVE */
+.advertiser-btn:active{
+  background: var(--color-282A33);
+  box-shadow: 0px 0px 20px 0px #DD292999;
+  transition: all 0.3s;
+}
+.advertiser-btnm2:active{
+  background: var(--color-282A33);
+  transition: all 0.3s;
+}
+.signup-btn:active,.signup-btnm:active{
+  background: var(--color-282A33);
+  transition: all 0.3s;
+}
+.see_all-btn:active{
+  background: var(--color-282A33);
+  box-shadow: 0px 0px 17.9px 0px #FFFFFF42 inset;
+  transition: all 0.3s;
+}
+
+/* ================================================================= BUTTON MEDIA */
+
+@media(max-width: 1280px){
+  .container{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+@media(max-width: 1000px){
+  .container{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+@media(max-width: 800px){
+  .container{
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .signup-btnm{
+    font-size: 10px;
+    width: 100.47px;
+    height: 30.82px;
+  }
+}
+@media(max-width: 700px){
+  .container{
+    max-width: 580px;
+    margin: 0 auto;
+  }
+}
+@media(max-width: 660px){
+  .container{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .advertiser-btn{
+    box-shadow: 0px 0px 17.9px 0px #FFFFFF42 inset;
+    background: #EE883D;
+    width: 163px;
+    height: 50px;
+    border-radius: 12px;
+    color: var(--color-FFFFFF);
+    font-size: 12px;
+
+  }
+}
+@media(max-width: 555px){
+  .container{
+    max-width: 420px !important;
+  }
+}
+@media(max-width: 460px){
+  .container{
+    max-width: 320px !important;
+  }
+  .signup-btn{
+    font-size: 16px;
+    width: 163px;
+    height: 50px;
+  }
+  
+}
+@media (max-width: 360px){
+  .container{
+    max-width: 261px !important;
+  }
+}
+@media (max-width: 300px){
+  .container{
+    max-width: none;
+    width: 100%;
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 200px){
+  .advertiser-btn {
+    box-shadow: 0px 0px 17.9px 0px #FFFFFF42 inset;
+    background: #EE883D;
+    width: 143px;
+    height: 40px;
+    border-radius: 12px;
+    color: var(--color-FFFFFF);
+    font-size: 12px;
+  }
+}
+@media (max-width: 175px){
+  .advertiser-btn {
+    box-shadow: 0px 0px 17.9px 0px #FFFFFF42 inset;
+    background: #EE883D;
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    color: var(--color-FFFFFF);
+    font-size: 10px;
+  }
+
+
+}

@@ -1,0 +1,7 @@
+@media(max-width: 1440px){}
+% @media(max-width: 744px){}
+@media(max-width: 800px){}
+@media(max-width: 460px){}
+
+
+@media(max-width: 320px){}

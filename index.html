@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home page</title>
+
+  <link href="./styles/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="./styles/root.css" rel="stylesheet" type="text/css"/>
+  <link href="./styles/global.css" rel="stylesheet" type="text/css"/>
+  <link href="./styles/header.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="./styles/animateBoom.css"/>
+<!--   <link rel="stylesheet" href="./styles/adaptive.css"/> -->
+</head>
+<body>
+
+  <header class="header">
+  <div class="container">
+
+    <div class="header_menu">
+      <div class="header_logo">
+        <img src="./icons/cashboom/Logo_CashBoom.svg" alt="Logo_CashBoom" title="Logo_CashBoom"/>
+      </div>
+
+      <nav class="header_nav ff_ubuntu">
+        <a href="#s_advantage">Преимущества</a>
+        <a href="#s_advantage">Веб-мастера</a>
+        <a href="#s_prise_lead">Призы</a>
+        <a href="#s_reviews">Отзывы</a>
+        <a href="#s_want_money">Паблики и блоги</a>
+        <button class="signup-btnm header_sign_up">Регистрация</button>
+      </nav>
+      <button class="header_burger-menu" id="header_burger">
+        <svg width="53" height="31" viewBox="0 0 53 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="0.5" width="53" height="6" rx="3" fill="white"/>
+          <rect y="12.5" width="53" height="6" rx="3" fill="white"/>
+          <rect y="24.5" width="53" height="6" rx="3" fill="white"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="header__wrapper">
+    
+    <!-- container -->
+  <div class="container header_container">
+    <div class="header_title-container">
+      <div class="header_titles">
+        <h1 class="ff_nunito_sans" id="header_h1">
+          <span class="h1_span">Мульти</span>вертикальная</br> 
+          <span class="h1_underline">партнерка</span>
+        </h1>
+      </div><!-- header-titles -->
+      <div class="header_description">
+        <h3 class="ff_ubuntu">Мы сделаем всё, чтобы вы </h3>
+        <p class="ff_ubuntu">достойно зарабатывали!</p>
+      </div>
+      <button class="fw_7 ff_inter advertiser-btn">Для рекламодателей</button>
+    </div>
+    <div id="animate_bomb">
+      <div id="bomb"></div>
+    </div>
+    </div>
+    <div class="stones" id="stopping_stones">
+      <div class="stone stone1"><img src="./images/stone.png" alt=""></div>
+      <div class="stone stone2"><img src="./images/stone1.png" alt=""></div>
+      <div class="stone stone3"><img src="./images/stone2.png" alt=""></div>
+    </div>
+    <div class="stones" id="moving_stones">
+      <div class="stone stone1-a"><img src="./images/stone.png" alt=""></div>
+      <div class="stone stone2-a"><img src="./images/stone1.png" alt=""></div>
+      <div class="stone stone3-a"><img src="./images/stone2.png" alt=""></div>
+    </div>
+  </div>
+</header>
+<script>
+  let stopping_stones=document.querySelector('#stopping_stones')
+  let moving_stones=document.querySelector('#moving_stones')
+setTimeout(()=>{
+  stopping_stones.style.opacity=0;
+  moving_stones.style.opacity=1;
+},2900);
+</script>
+<script src="./js/animteBoom.js"></script>
+</body>
+</html>
